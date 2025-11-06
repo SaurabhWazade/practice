@@ -9,7 +9,7 @@ pipeline {
     stage ('one') {
       steps {
         sh """ sudo yum install docker -y
-        sudo systemctl start httpd"""
+        sudo systemctl start docker"""
         
       }
     }
