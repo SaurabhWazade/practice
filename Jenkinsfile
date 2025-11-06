@@ -20,7 +20,7 @@ pipeline {
     }
     stage ('three') {
       steps {
-        sh "sudo git clone "
+        sh "sudo git clone https://github.com/SaurabhWazade/practice.git"
       }
     }
     stage ('four') {
