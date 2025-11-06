@@ -15,12 +15,12 @@ pipeline {
     }
     stage ('two') {
       steps {
-        sh "sudo docker run -dp --name s1 httpd"
+        sh "sudo docker run -dp 80:80 --name s1 httpd"
       }
     }
     stage ('three') {
       steps {
-        sh "sudo git clone "
+        sh "sudo git clone https://github.com/SaurabhWazade/practice.git"
       }
     }
     stage ('four') {
